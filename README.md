@@ -13,9 +13,9 @@ SELECT last_name FROM customer WHERE first_name='Mary';
 --5
 SELECT * FROM film WHERE NOT length>50 AND rental_rate=2.99 OR rental_rate=4.99;
 
-<img src="postegreSQL_dvdrental_Work1_patika.dev.jpeg" alt="And, Or use" width="100%" height="100%">
+<img src="postegreSQL_dvdrental_Work1_patika.dev.jpg" alt="And, Or use" width="100%" height="100%">
 
 ---<b>Work 2</b>--</br>
 
 
-<img src="postegreSQL_dvdrental_Work2_patika.dev.jpeg" alt="And, Or use" width="100%" height="100%">
+<img src="postegreSQL_dvdrental_Work2_patika.dev.jpg" alt="And, Or use" width="100%" height="100%">
