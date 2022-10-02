@@ -1,7 +1,7 @@
 # PostgreSQL
 What's PostgreSQL? And Queries
 
----<b>Work 1</b>--WHERE, AND uses--</br>
+---<b>Work 1</b>--<i>WHERE, AND uses</i>--</br>
 --1</br>
 SELECT title,description FROM film;</br>
 --2</br>
@@ -15,7 +15,7 @@ SELECT * FROM film WHERE NOT length>50 AND rental_rate=2.99 OR rental_rate=4.99;
 </br>
 <img src="postegreSQL_dvdrental_Work1_patika.dev.jpg" alt="And, Or use" width="100%" height="100%"></br>
 
----<b>Work 2</b>--BETWEEN, IN uses--</br>
+---<b>Work 2</b>--<b><i>BETWEEN, IN uses</i></b>--</br>
 
 --1</br>
 SELECT * FROM film WHERE replacement_cost BETWEEN 12.99 AND 16.99;</br>
