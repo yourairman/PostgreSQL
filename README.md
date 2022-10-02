@@ -56,9 +56,9 @@ SELECT * FROM film WHERE title LIKE 'C%' AND LENGTH>90 AND rental_rate=2.99;
 --ILIKE YERİNE !~~*	 (ünlem, iki tane tilda ve yıldız)  kullanılabilir
 
 
----<b>Work 5</b>--<b><i>DISTINCT, COUNT uses</i></b>--</br>
+---<b>Work 4</b>--<b><i>DISTINCT, COUNT uses</i></b>--</br>
 
-<img src="postegreSQL_dvdrental_Work5_patika.dev.jpg" alt="Distinct, And use" width="100%" height="100%"></br>
+<img src="postegreSQL_dvdrental_Work4_patika.dev.jpg" alt="Distinct, And use" width="100%" height="100%"></br>
 
 --1 film tablosunda bulunan replacement_cost sütununda bulunan birbirinden farklı değerleri sıralayınız.</br>
 SELECT DISTINCT replacement_cost FROM film;</br>
