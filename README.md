@@ -70,3 +70,7 @@ SELECT * FROM film WHERE title LIKE 'T%' AND rating='G';</br>
 SELECT COUNT (country) FROM country WHERE country LIKE '_____';</br>
 --5 city tablosundaki şehir isimlerinin kaç tanesi 'R' veya r karakteri ile biter?</br>
 SELECT COUNT (city) FROM city WHERE city ILIKE '%r';</br>
+
+---<b>Work 5</b>--<b><i>ORDER BY, LIMIT, OFFSET uses</i></b>--</br>
+
+<img src="postegreSQL_dvdrental_Work5_patika.dev.jpg" alt="Distinct, And use" width="100%" height="100%"></br>
