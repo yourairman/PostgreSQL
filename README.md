@@ -74,3 +74,21 @@ SELECT COUNT (city) FROM city WHERE city ILIKE '%r';</br>
 ---<b>Work 5</b>--<b><i>ORDER BY, LIMIT, OFFSET uses</i></b>--</br>
 
 <img src="postegreSQL_dvdrental_Work5_patika.dev.jpg" alt="Distinct, And use" width="100%" height="100%"></br>
+
+---<b>Work 6</b>--<h3><i>AGGREGATE FUNCTIONS</i></h3>--</br>
+
+<img src="postegreSQL_dvdrental_Work6_patika.dev.jpg" alt="AGGREGATE FUNCTIONS - MAX, MIN, SUM, AVG, COUNT" width="100%" height="100%"></br>
+
+--1-film tablosunda bulunan rental_rate sütunundaki değerlerin ortalaması nedir?</br>
+
+SELECT ROUND(AVG(rental_rate),2) FROM film;</br>
+
+--2-film tablosunda bulunan filmlerden kaç tanesi 'C' karakteri ile başlar?</br>
+SELECT COUNT(title) FROM film WHERE title LIKE 'C%';</br>
+
+--3-film tablosunda bulunan filmlerden rental_rate değeri 0.99 a eşit olan en uzun (length) film kaç dakikadır?</br>
+
+SELECT MAX(length) FROM film WHERE rental_rate IN(0.99);</br>
+
+--4-film tablosunda bulunan filmlerin uzunluğu 150 dakikadan büyük olanlarına ait kaç farklı replacement_cost değeri vardır?</br>
+SELECT COUNT(DISTINCT(replacement_cost)) FROM film WHERE replacement_cost>150;</br>
