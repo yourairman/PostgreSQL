@@ -96,15 +96,15 @@ SELECT COUNT(DISTINCT(replacement_cost)) FROM film WHERE replacement_cost>150;</
 ---<b>Work 7</b>--<b><i>GROUP BY, HAVING uses</i></b>--</br>
 
 
---1-film tablosunda bulunan filmleri rating değerlerine göre gruplayınız.
-SELECT rating, count(*) FROM film GROUP BY rating
---2-film tablosunda bulunan filmleri replacement_cost sütununa göre grupladığımızda film sayısı 50 den fazla olan replacement_cost değerini ve karşılık gelen film sayısını sıralayınız.
+--1-film tablosunda bulunan filmleri rating değerlerine göre gruplayınız.</br>
+SELECT rating, count(*) FROM film GROUP BY rating;</br>
+--2-film tablosunda bulunan filmleri replacement_cost sütununa göre grupladığımızda film sayısı 50 den fazla olan replacement_cost değerini ve karşılık gelen film sayısını sıralayınız.</br>
 
-SELECT replacement_cost, count(*) FROM film GROUP BY replacement_cost HAVING count(replacement_cost) >50
---3-customer tablosunda bulunan store_id değerlerine karşılık gelen müşteri sayılarını nelerdir? 
-SELECT store_id , COUNT(*) FROM customer GROUP BY store_id
---4. city tablosunda bulunan şehir verilerini country_id sütununa göre gruplandırdıktan sonra en fazla şehir sayısı barındıran country_id bilgisini ve şehir sayısını paylaşınız.
-SELECT  country_id, count(city) from city	Group by country_id	ORDER BY COUNT(city_id) DESC Limit 1 ;
+SELECT replacement_cost, count(*) FROM film GROUP BY replacement_cost HAVING count(replacement_cost) >50;</br>
+--3-customer tablosunda bulunan store_id değerlerine karşılık gelen müşteri sayılarını nelerdir? </br>
+SELECT store_id , COUNT(*) FROM customer GROUP BY store_id;</br>
+--4. city tablosunda bulunan şehir verilerini country_id sütununa göre gruplandırdıktan sonra en fazla şehir sayısı barındıran country_id bilgisini ve şehir sayısını paylaşınız.</br>
+SELECT  country_id, count(city) from city	Group by country_id	ORDER BY COUNT(city_id) DESC Limit 1 ;</br>
 
 <img src="postegreSQL_dvdrental_Work7_patika.dev.jpg" alt="GROUP BY, HAVING USES" width="100%" height="100%"></br>
 
