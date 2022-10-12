@@ -109,5 +109,5 @@ SELECT  country_id, count(city) from city	Group by country_id	ORDER BY COUNT(cit
 <img src="postegreSQL_dvdrental_Work7_patika.dev.jpg" alt="GROUP BY, HAVING USES" width="100%" height="100%"></br>
 
 
----<b>Work 8</b>--<b><i>INSERT, UPDATE uses</i></b>--</br>
+---<b>Work 8</b>--<b><i>INSERT, UPDATE uses</i> for DATABASE and TABLE</b>--</br>
 
