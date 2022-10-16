@@ -109,5 +109,31 @@ SELECT  country_id, count(city) from city	Group by country_id	ORDER BY COUNT(cit
 <img src="postegreSQL_dvdrental_Work7_patika.dev.jpg" alt="GROUP BY, HAVING USES" width="100%" height="100%"></br>
 
 
----<b>Work 8</b>--<b><i>INSERT, UPDATE uses</i> for DATABASE and TABLE</b>--</br>
+---<b>Work 8</b>--<b><i>CREATE, UPDATE, DROP uses</i> for DATABASE and TABLE</b>--</br>
 
+--1- test veritabanınızda employee isimli sütun bilgileri </br>
+--id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.</br>
+
+CREATE DATABASE [test] TABLE [employee] VALUE ( </br>
+	id SERIAL PRIMARY KEY,</br>
+	name varchar(50) NOT NULL,</br>
+	birthday DATE,</br>
+	email varchar(100),</br>
+	)</br>
+
+<img src="postegreSQL_dvdrental_Work8_patika.dev.jpg" alt="CREATE, UPDATE, DROP, DELETE" width="100%" height="100%"></br>
+
+--3-Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.</br>
+
+UPDATE FROM employee</br>
+SET  name = 'Abdulkadir GUR',</br>
+        birthday = '1998-02-25',</br>
+        email = 'kadirgur70@gmail.com'</br>
+        WHERE  id BETWEEN 1 AND 5</br>
+RETURNING *;</br>
+
+--4-Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.</br>
+
+DELETE FROM employee</br>
+        WHERE  id BETWEEN 1 AND 5</br>
+RETURNING *;</br>
